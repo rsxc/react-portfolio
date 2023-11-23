@@ -1,11 +1,11 @@
 {
-  "short_name": "Mayank Agarwal",
-  "name": "Mayank Agarwal - Portfolio",
+  "short_name": "Raghav Sethi",
+  "name": "Raghav Sethi - Portfolio",
   "icons": [
     {
       "src": "images/logo.png",
       "type": "image/png",
-      "sizes": "425x225"
+      "sizes": "1000x1000"
     }
   ],
   "start_url": ".",

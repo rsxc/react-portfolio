@@ -69,7 +69,7 @@ function Experience(props) {
                       </h2>
                       <div style={styles.subtitleContainerStyle}>
                         <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
-                          {item.subtitle}
+                          <a href={item.companyName}> {item.subtitle} </a>
                         </h4>
                         {item.workType && (
                         <h5 style={styles.inlineChild}>

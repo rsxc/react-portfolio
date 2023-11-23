@@ -61,7 +61,7 @@ function Education(props) {
                   titleColor: theme.chronoTheme.titleColor,
                 }}
               >
-                <div className="chrono-icons">
+                <div className="chrono-icons" style="height:300px">
                   {data.education.map((education) => (education.icon ? (
                     <img
                       key={education.icon.src}

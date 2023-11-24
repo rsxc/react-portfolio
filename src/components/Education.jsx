@@ -46,7 +46,7 @@ function Education(props) {
         <Fade>
           <div style={{ width }} className="section-content-container">
             <Container>
-              <Chrono
+              {/* <Chrono
                 hideControls
                 allowDynamicUpdate
                 useReadMore={false}
@@ -70,7 +70,7 @@ function Education(props) {
                     />
                   ) : null))}
                 </div>
-              </Chrono>
+              </Chrono> */}
             </Container>
           </div>
         </Fade>

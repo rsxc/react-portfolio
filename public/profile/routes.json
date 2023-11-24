@@ -1,14 +1,9 @@
 {
     "sections": [
         {
-            "component": "About",
-            "path": "/about",
-            "headerTitle": "About"
-        },
-        {
-            "component": "Skills",
-            "path": "/skills",
-            "headerTitle": "Skills"
+            "component": "Experience",
+            "path": "/experience",
+            "headerTitle": "Experience"
         },
         {
             "component": "Education",
@@ -16,14 +11,19 @@
             "headerTitle": "Education"
         },
         {
-            "component": "Experience",
-            "path": "/experience",
-            "headerTitle": "Experience"
+            "component": "Skills",
+            "path": "/skills",
+            "headerTitle": "Skills"
         },
         {
             "component": "Projects",
             "path": "/projects",
             "headerTitle": "Projects"
+        },
+        {
+            "component": "About",
+            "path": "/about",
+            "headerTitle": "About"
         }
     ]
 }

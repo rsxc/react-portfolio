@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from 'react-router-dom';
+import {
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import AppContext from './AppContext';
@@ -13,14 +16,19 @@ function App() {
   window.matchMedia = null;
   const darkMode = useDarkMode(true);
 
+  const router = createHashRouter([
+    {
+      path: "/*",
+      element: <MainApp />,
+    }
+  ]);
+
   return (
     <AppContext.Provider value={{ darkMode }}>
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="App">
-          <BrowserRouter>
-            <MainApp />
-          </BrowserRouter>
+          <RouterProvider router={router} />
         </div>
       </ThemeProvider>
     </AppContext.Provider>

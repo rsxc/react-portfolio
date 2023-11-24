@@ -13,6 +13,7 @@ const styles = {
     marginBottom: 25,
   },
   showMoreStyle: {
+    position: "relative",
     margin: 25,
   },
 };
@@ -46,7 +47,6 @@ const Projects = (props) => {
                   </Fade>
                 ))}
               </Row>
-
               {!showMore
                 && (
                 <Button
